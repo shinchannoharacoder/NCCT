@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REGISTRATION FORM</title>
+	<style type="text/css">
+		table{
+			border: 2px solid;
+			border-collapse: collapse;
+		}
+		th{
+			border: 2px solid;
+			border-collapse: collapse;
+		}
+		legend{
+			text-align: center;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		fieldset{
+			background-color: lightcyan;
+		}
+        input{
+        	border: 2px inset #adadad;
+        }
+        select:hover{
+        	border: 2px inset #adadad;
+        	background-color: yellow!important;
+        }
+        option{
+        	background-color: yellow;
+            border: 2px inset #adadad;
+       }
+       #yeu1{
+       	position: absolute;
+       	right: 0px;
+       	display: inline;
+       	background-color: cyan;
+       	box-shadow: 5px 6px 7px grey;
+       	border: 3px inset #adadad;
+       	width: 100px;
+       	font-weight: bold;
+       	border-radius: 10px;
+       	font-size: 20px;
+       	padding: 5px;
+       	cursor: pointer;
+       }
+       #yui2{
+       	padding: 5px;
+       	border-radius: 15px; 
+       	position: absolute;
+       	border: 3px outset #adadad;
+       	width: 100px;
+       	font-size: 20px;
+       	font-weight: bold;
+       	background-color: cyan;
+       	box-shadow: 6px 6px 8px grey;
+        overflow: left;
+        display: inline;
+        width: 90px;
+        cursor: pointer;
+       }
+       #yu{
+       	    position: absolute;
+			left: 50%;
+			font-size: 20px;
+			padding: 10px;
+			border: 4px double black;
+			border-radius: 20px;
+			background-color: lightgreen;
+			cursor: pointer;
+       }
+	</style>
+</head>
+<body>
+
+<form action="submited.html" method="post" target="_blank">
+	<fieldset>
+		<legend>NCCT ADDMISSION FORM</legend>
+		<h1><center>NCCT COMPUTER CENTRE</center></h1>
+		<h2><center>M.:9818708161,8860667891</center></h2>
+		<h2><center><u>ADMISSION FORM</u></center></h2>
+		<fieldset>
+	    <legend>PERSONAL INFO</legend>
+		<label >FIRST NAME</label><br>
+		<input type="text" name="firstname" placeholder="Enter Name" autofocus><br><br>
+		<label>LAST NAME</label><br>
+		<input type="text" name="lastname" placeholder="Enter LastName"><br><br>
+		<label>FATHER'S/HUSBAND'S NAME</label><br>
+		<input type="text" name="Father's Name" placeholder="Enter Father Name"><br><br>
+		<label>SELECT DOB</label><br>
+		<input type="date" name="dob"><br><br>
+		<fieldset><legend>COURSES</legend>
+		<label for="ye1">SELECT COURSE:</label>
+		<select id="ye1">
+			<option>BASIC (MICROSOFT OFFICE)</option>
+			<option>DESKTOP PUBLICATION(D.T.P)/GRAPHIC DESIGNING</option>
+			<option>ACCOUNTING PACKAGE</option>
+			<option>DATA ENTRY PACKAGE</option>
+			<option>DIPLOMA COMPUTER COURSE</option>
+			<option>DIPLOMA IN ADVANCE COMPUTER COURSE</option>
+			<option>TALLY</option>
+			<option>EXCEL+ADVANCE EXCEL</option>
+			<option>BUSY</option>
+			<option>ENGLISH TYPING</option>
+			<option>HINDI TYPING</option>
+		</select>
+		<label for="ye2">SELECT BATCH</label>
+	    <select id="ye2">
+	    	<option>8:00 TO 9:00 MORNING</option>
+	    	<option>9:00 TO 10:00 MORNING</option>
+	    	<option>10:00 TO 11:00 MORNING</option>
+	    	<option>11:00 TO 12:00 MORNING</option>
+	    	<option>12:00 TO 1:00 AFTERNOON</option>
+	    	<option>1:00 TO 2:00 AFTERNOON</option>
+	    	<option>2:00 TO 3:00 AFTERNOON</option>
+	    	<option>3:00 TO 4:00 AFTERNOON</option>
+	    	<option>4:00 TO 5:00 EVENING</option>
+	    	<option>5:00 TO 6:00 EVENING</option>
+	    	<option>6:00 TO 7:00 EVENING</option>
+	    	<option>7:00 TO 8:00 EVENING</option>
+	    	<option>8:00 TO 9:00 NIGHT (LAST BATCH)</option>
+	    </select>
+	    </fieldset><br>
+	   
+		<label>SELECT GENDER</label><br>
+		<input type="radio" value="male" name="gender">MALE
+		<input type="radio" value="female" name="gender">FEMALE
+		<input type="radio" value="other" name="gender">OTHER<br><br>
+		<label>MOBILE NO.</label>
+		<input type="tel" name="mobile" placeholder="format:123-123-1234" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+		<label>WHATSAPP NO.</label>
+		<input type="tel" name="mobile" placeholder="format:123-123-1234" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+		<label>AADHAR NO.</label>
+		<input type="number" name="aadhar no" placeholder="Enter Aadhar No"><br><br>
+		<label>ADDRESS.</label>
+		<input type="address" name="address" style="height: 40px; width: 200px;"><br><br>
+		<label>EMAIL ID.</label><br>
+		<input type="email" name="email" placeholder="Enter Email"><br><br>
+		<label>INSTERESTED IN:</label>
+		1.<input type="text" name="Insterest">2.<input type="text" name="Insterest">3.<input type="text" name="Insterest"><br><br>
+		<label>UPLOAD PHOTO</label><br>
+		<input type="file" name="photo"><br><br>
+		<label>UPLOAD SIGNATURE</label><br>
+		<input type="file" name="signature"><br><br>
+	    </fieldset>
+		<h3>LAST QUALIFICATION:</h3>
+		<table>
+			<tr>
+				<th>S.NO</th>
+				<th>SCHOOL/BOARD/UNIVERSITY NAME</th>
+				<th>CLASS</th>
+				<th>YEARS</th>
+				<th>PERCENTAGE</th>
+			</tr>
+			<tr>
+				<td><input type="text" name="s no."></td>
+				<td><input style="width: 500px;"type="text" name="school Name"></td>
+				<td><input type="text" name="class"></td>
+				<td><input type="number" name="years"></td>
+				<td><input type="text" name="percentage"></td>
+			</tr>
+		</table>
+	</fieldset>
+	<br>
+	<br>
+    <input id="yeu1" type="submit" value="SUBMIT">
+    <input id="yui2" type="reset" value="RESET">
+</form>
+ <a href="ass.html"><button id="yu">HOME</button></a>
+</body>
+</html>
